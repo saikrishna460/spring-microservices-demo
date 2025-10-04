@@ -31,6 +31,7 @@ public class ProductController {
 
     @PostMapping(value = "/addProducts")
     public String addProducts(@RequestBody Product product){
+        System.out.println(product);
         return "added";
     }
 }
